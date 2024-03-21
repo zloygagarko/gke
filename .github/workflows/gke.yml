@@ -29,6 +29,6 @@ jobs:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
       - name: Apply Terraform Deployment
-        run: terraform apply -auto-approve tfplan
+        run: terraform destroy -auto-approve tfplan
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
