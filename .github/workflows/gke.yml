@@ -20,9 +20,13 @@ jobs:
 
       - name: Initialize Terraform
         run: terraform init
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
       - name: Plan Terraform Deployment
         run: terraform plan -out=tfplan
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
       - name: Apply Terraform Deployment
         run: terraform apply -auto-approve tfplan
