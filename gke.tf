@@ -2,17 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 variable "gke_username" {
-  default     = ""
+  default     = "admin"
   description = "gke username"
 }
 
 variable "gke_password" {
-  default     = ""
+  default     = "admin123"
   description = "gke password"
 }
 
 variable "gke_num_nodes" {
-  default     = 2
+  default     = 1
   description = "number of gke nodes"
 }
 
