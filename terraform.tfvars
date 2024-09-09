@@ -2,4 +2,5 @@
 # SPDX-License-Identifier: MPL-2.0
 
 project_id = "gke-project-7"
-region     = "us-central1-a"
+region     = "us-central1"
+zone       = "us-central1-a"
