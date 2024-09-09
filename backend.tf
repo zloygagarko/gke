@@ -1,6 +1,6 @@
 terraform {
  backend "gcs" {
-   bucket  = "forthestate"
+   bucket  = "gke-terraform-backend-samozhenov"
    prefix  = "terraform/state"
  }
 }
