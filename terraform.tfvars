@@ -3,4 +3,4 @@
 
 project_id = "gke-project-7"
 region     = "us-central1"
-zone       = "us-central1-a"
+zone       = "us-east1-b"
